@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" text="style/css" href="{% static '../../../staticfiles/pages/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <meta property="og:image" content="https://mozgovoy.github.io/main/img/logo.png"/>
+    <link rel="SHORTCUT ICON" href="../../static/pages/img/fav.png" type="image/png">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <img class="logo" src="../../static/pages/img/logo.png">
+                </div>
+                <nav>
+                    <ul class="navigation_button"><a href="https://mozgovoy.github.io/portfolio/main/">Главная</a></ul>
+                    <ul class="navigation_button"><a  href="#">1 курс</a>
+                        <div class="menu">
+                            <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-1/informatics">Информатика</a></li>
+                            <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-1/it-in-math">Ит в математике</a></li>
+                            <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-1/it-in-physics">Ит в физике</a></li>
+                            <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-1/programming">Программирование</a></li>
+                            <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-1/practice">Практика</a></li>
+                        </div> 
+                    </ul>
+                    <ul class="navigation_button"><a href="#">2 курс</a>
+                            <div class="menu">
+                                <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-2/comp-math">Вычислительная математика</a></li>
+                                <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-2/web">Веб-проектирование</a></li>
+                                <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-2/data-analysis">Анализ данных</a></li>
+                                <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-2/programming">Программирование</a></li>
+                                <li class="menu_button"><a href="https://mozgovoy.github.io/portfolio/year-2/practice">Практика</a></li>
+                            </div>
+                    </ul>
+                        <ul class="navigation_button"><a href="#">3 курс</a></ul>
+                        <ul class="navigation_button"><a href="#">4 курс</a></ul>
+                        <ul class="navigation_button"><a href="#">Проекты</a></ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    {% block main %}{% endblock main %}
+    <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <p>© Мозговой Н. А<br> nikitafeodosia@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
